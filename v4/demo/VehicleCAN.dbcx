@@ -3656,7 +3656,7 @@ CM_ BU_ ECM_Diesel "Diesel";
 CM_ BU_ GWM "Gateway Module CGEA1.3(Star Architecture)";
 CM_ BU_ TSTR "Diagnostic Tester";
 CM_ BO_ 949 "For 2010MY and beyond, use for SCT (non-CGEA) and CGEA modules";
-CM_ BO_ 524 "Requires b/w evaluation on each program for faster rate, requires Core Netcom and Netcom App. for approval.";
+CM_ BO_ 524 "RequiresÂ b/w evaluation on each program for faster rate, requires Core Netcom and Netcom App. for approval.";
 CM_ SG_ 524 PrplWhlTotTqRqMxAwd_No_Cs "Signal not transmitted on gas variants.";
 CM_ SG_ 524 PrplWhlTotTqRqMxAwd_No_Cnt "Signal not transmitted on gas variants.";
 CM_ BO_ 885 "NOTE: START BITS 8-11 MUST BE OPEN SPEC REQUIREMENT";
@@ -3727,7 +3727,7 @@ CM_ SG_ 1034 VehicleGGCCData "RCMGenSigTimeout=6000";
 CM_ SG_ 1090 Mtr2State_D_ActlMntr "Signal Not transmitted on PCM_HEV variant";
 CM_ SG_ 1090 Inv1Ain_I_ActlMntr "Signal Not transmitted on PCM_HEV variant";
 CM_ SG_ 1090 VehElRnge_L_Dsply "Signal Not transmitted on HPCM variant";
-CM_ BO_ 374 "Programs w/o HS1 0x172 will need HS1 0x176 for GearPos_D_Actl.  Future MY Programs that choose c/o still require HS1 0x172. ";
+CM_ BO_ 374 "Programs w/o HS1 0x172 will need HS1 0x176Â for GearPos_D_Actl.Â Â FutureÂ MYÂ ProgramsÂ thatÂ chooseÂ c/o stillÂ require HS1 0x172.Â ";
 CM_ SG_ 374 TrnRng_D_Rq "Powersplit HEVs with HF45, HPCM will Tx  this message.  For all other programs it will be Tx by PCM or TCM. ";
 CM_ SG_ 374 TrnPrkSys_D_Actl "Powersplit HEVs with HF45, HPCM will Tx  this message.  For all other programs it will be Tx by PCM or TCM. ";
 CM_ SG_ 374 GearLvr_D_ActlDrv "Powersplit HEVs with HF45, HPCM will Tx  this message.  For all other programs it will be Tx by PCM or TCM. ";
@@ -3744,11 +3744,11 @@ CM_ SG_ 603 PrplTqMnRgen_B_Actl "48V mHEV: ECM_HEVDSL is Tx,  MHT HEV: PCM_HEV i
 CM_ SG_ 603 BattTracCnnct_D_Rq "48V mHEV: ECM_HEVDSL is Tx,  MHT HEV: PCM_HEV is Tx,  Powersplit HEV: SOBDMC_HPCM is Tx";
 CM_ SG_ 872 HybMdeStat_D_Dsply "Signal not transmitted by HPCM";
 CM_ BO_ 560 "MHT (U611/625) the HPCM will Rx 0x230 from the PCM_HEV
-Powersplit FWD HEV’s (Cx482/3 430) the HPCM will Tx 0x230";
+Powersplit FWD HEVÂ’s (Cx482/3 430) the HPCM will Tx 0x230";
 CM_ SG_ 560 SelDrvMdeSwtch_D_Stat3 "ECM_HEV,  PCM & PCM_HEV do not support or Transmit signal.";
-CM_ SG_ 560 TrnSrvcRqd_B_Rq "Signal not transmitted on Diesel & HEV variants. MHT(U611/625) HPCM Rx 0x230 from PCM_HEV. Powersplit FWD HEV’s(Cx482/3 430) HPCM Tx 0x230.";
-CM_ SG_ 560 TrnShifActv_B_Actl "Signal not transmitted on HEV variants. MHT(U611/625) HPCM Rx 0x230 from PCM_HEV. Powersplit FWD HEV’s(Cx482/3 430) HPCM Tx 0x230.";
-CM_ SG_ 560 GboxOil_Te_Actl "Signal not transmitted on HEV variants. MHT(U611/625) HPCM Rx 0x230 from PCM_HEV. Powersplit FWD HEV’s(Cx482/3 430) HPCM Tx 0x230.";
+CM_ SG_ 560 TrnSrvcRqd_B_Rq "Signal not transmitted on Diesel & HEV variants. MHT(U611/625) HPCM Rx 0x230 from PCM_HEV. Powersplit FWD HEVÂ’s(Cx482/3 430) HPCM Tx 0x230.";
+CM_ SG_ 560 TrnShifActv_B_Actl "Signal not transmitted on HEV variants. MHT(U611/625) HPCM Rx 0x230 from PCM_HEV. Powersplit FWD HEVÂ’s(Cx482/3 430) HPCM Tx 0x230.";
+CM_ SG_ 560 GboxOil_Te_Actl "Signal not transmitted on HEV variants. MHT(U611/625) HPCM Rx 0x230 from PCM_HEV. Powersplit FWD HEVÂ’s(Cx482/3 430) HPCM Tx 0x230.";
 CM_ SG_ 369 SeatWorkSrfc_B_Falt "Signal Not transmitted by TCM_DSL";
 CM_ SG_ 369 TrnIpcDsplyRng2_D_Actl "Signal not transmitted on HEV variants.";
 CM_ SG_ 369 TrnIpcDsplyRng_D_Stat "Signal not transmitted on HEV variants.";
@@ -3836,7 +3836,7 @@ CM_ SG_ 376 AirAmb_Te_Actl "Signal not transmitted on Gas variants";
 CM_ SG_ 359 PrplWhlRgenMn_Tq_Actl "Signal not transmitted on Gas & Diesel variants";
 CM_ SG_ 359 ElPw_D_StatStrtStop "Signal not transmitted on HEV variants.";
 CM_ SG_ 359 TrnAin_Tq_Actl "Signal not transmitted on HEV variances.";
-CM_ SG_ 359 PlgActvArb_B_Actl "Only supported on PHEV programs.  PlgActvArb_B_Actl HPCM will Tx on Powersplit PHEV’s,  On MHT PHEVs the PCM_HEV will Tx and HPCM will Rx. 
+CM_ SG_ 359 PlgActvArb_B_Actl "Only supported on PHEV programs.  PlgActvArb_B_Actl HPCM will Tx on Powersplit PHEVÂ’s,  On MHT PHEVs the PCM_HEV will Tx and HPCM will Rx. 
 ";
 CM_ SG_ 359 TrnAinTq_D_Qf "Signal not transmitted on HEV variances.";
 CM_ SG_ 358 StopStrtStdby_D_Indic "Signal not transmitted on HEV variants.";
@@ -12729,4 +12729,3 @@ VAL_ 922 DcacRdy_D_Stat 7 "NotUsed_2" 6 "NotUsed_1" 5 "Faulted" 4 "ProtectionTem
 VAL_ 922 DcacPlugPrsnt_B_Stat 1 "Yes" 0 "No" ;
 VAL_ 922 DcacClntFlw_D_Rq 3 "High" 2 "Medium" 1 "Low" 0 "Off" ;
 VAL_ 922 CoolFanDcac_D_Rq 3 "High" 2 "Medium" 1 "Low" 0 "Off" ;
-
